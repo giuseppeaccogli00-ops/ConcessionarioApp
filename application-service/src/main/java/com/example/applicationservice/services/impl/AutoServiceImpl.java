@@ -28,6 +28,12 @@ public class AutoServiceImpl implements AutoService {
         return autoRepository.save(auto);
     }
 
+    @Transactional
+    public List<Auto> createAllAuto(List<Auto> autoList) {
+        return autoRepository.saveAll(autoList);
+    }
+
+
     public List<Auto> getAll() {
         return autoRepository.findAll();
     }

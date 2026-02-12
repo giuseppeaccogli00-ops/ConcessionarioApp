@@ -13,6 +13,9 @@ public interface AutoClient {
     @PostMapping("/macchinas")
     AutoResponse create(@RequestBody AutoRequest request);
 
+    @PostMapping("/macchinas/lista")
+    List<AutoResponse> createAllAuto(@RequestBody List<AutoRequest> autoList);
+
     @GetMapping("/macchinas")
     List<AutoResponse> getAll();
 

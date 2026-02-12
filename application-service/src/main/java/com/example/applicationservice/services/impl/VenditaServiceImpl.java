@@ -3,6 +3,7 @@ package com.example.applicationservice.services.impl;
 import com.example.applicationservice.models.entity.Auto;
 import com.example.applicationservice.models.entity.Cliente;
 import com.example.applicationservice.models.entity.Vendita;
+import com.example.applicationservice.models.entity.Venditore;
 import com.example.applicationservice.repository.AutoRepository;
 import com.example.applicationservice.repository.ClientRepository;
 import com.example.applicationservice.repository.VenditaRepository;
@@ -11,6 +12,7 @@ import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service

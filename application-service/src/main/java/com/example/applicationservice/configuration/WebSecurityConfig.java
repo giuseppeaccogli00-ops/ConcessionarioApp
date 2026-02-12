@@ -57,8 +57,8 @@ public class WebSecurityConfig { // extends WebSecurityConfigurerAdapter {
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))//non usare sessioni, ogni richiesta ha JWT
                 .authorizeHttpRequests(auth ->
                         auth.requestMatchers("/autos").permitAll()
-                                .requestMatchers("/macchinas").permitAll()
-                                .requestMatchers("/clientes").permitAll()
+                                .requestMatchers("/macchinas/**").permitAll()
+                                .requestMatchers("/clientes/**").permitAll()
                                 .requestMatchers("/fornitores").permitAll()
                                 .requestMatchers("/venditas").permitAll()
                                 .requestMatchers("/venditores").permitAll()

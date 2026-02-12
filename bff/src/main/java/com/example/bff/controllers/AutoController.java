@@ -20,6 +20,9 @@ public class AutoController {
         return autoClient.create(request);
     }
 
+    @PostMapping("/lista")
+    public List<AutoResponse> createAllAuto(@RequestBody List<AutoRequest> autoList) {return autoClient.createAllAuto(autoList);}
+
     @GetMapping
     public List<AutoResponse> getAll() {
         return autoClient.getAll();
