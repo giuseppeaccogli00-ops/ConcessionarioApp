@@ -22,6 +22,9 @@ public class VenditoreController {
         return venditoreClient.create(request);
     }
 
+    @PostMapping("/random")
+    public void venditoriRandom() { venditoreClient.venditoriRandom(); }
+
     @GetMapping
     public List<VenditoreResponse> getAll() {
         return venditoreClient.getAll();
