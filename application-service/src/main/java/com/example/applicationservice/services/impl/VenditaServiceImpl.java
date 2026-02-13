@@ -90,7 +90,7 @@ public class VenditaServiceImpl implements VenditaService {
     }
 
     private String randomDate() {
-        String[] date = {"25/12/2017", "7/09/2018", "3/3/2019", "25/02/2020", "20/10/2021", "19/11/2022", "09/09/2023", "21/04/2024", "12/05/2025", "10/08/2025"};
+        String[] date = {"25/12/2017", "07/09/2018", "03/03/2019", "25/02/2020", "20/10/2021", "19/11/2022", "09/09/2023", "21/04/2024", "12/05/2025", "10/08/2025"};
         return date[RANDOM.nextInt(date.length)];
     }
 

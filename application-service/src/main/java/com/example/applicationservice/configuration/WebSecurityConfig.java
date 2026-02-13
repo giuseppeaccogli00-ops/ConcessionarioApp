@@ -64,6 +64,7 @@ public class WebSecurityConfig { // extends WebSecurityConfigurerAdapter {
                                 .requestMatchers("/venditas/**").permitAll()
                                 .requestMatchers("/venditores").permitAll()
                                 .requestMatchers("/venditores/random").permitAll()
+                                .requestMatchers("/reports").permitAll()
                                 .requestMatchers(
                                         "/swagger-ui.html",
                                         "/swagger-ui/**",
