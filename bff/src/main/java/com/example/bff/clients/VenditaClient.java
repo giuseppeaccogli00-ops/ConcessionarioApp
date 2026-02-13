@@ -15,6 +15,9 @@ public interface VenditaClient {
     @PostMapping("/venditas")
     VenditaResponse create(@RequestBody VenditaRequest request);
 
+    @PostMapping("venditas/random")
+    void venditeRandom();
+
     @GetMapping("/venditas")
     List<VenditaResponse> getAll();
 }

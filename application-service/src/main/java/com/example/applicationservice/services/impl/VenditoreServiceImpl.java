@@ -34,6 +34,7 @@ public class VenditoreServiceImpl implements VenditoreService {
                 .orElseThrow(() -> new RuntimeException("Venditore non trovato"));
     }
 
+    @Transactional
     public void venditoriRandom() {
         List<Venditore> venditori = new ArrayList<>();
 
