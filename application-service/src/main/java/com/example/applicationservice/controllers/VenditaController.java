@@ -4,6 +4,7 @@ import com.example.applicationservice.models.entity.Vendita;
 import com.example.applicationservice.services.impl.VenditaServiceImpl;
 import lombok.RequiredArgsConstructor;
 
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -18,6 +19,12 @@ public class VenditaController {
     @PostMapping
     public Vendita create(@RequestBody Vendita vendita) {
         return venditaservice.createVendita(vendita);
+    }
+
+    @PostMapping("/random")
+    public ResponseEntity<Void> generaVendite() {
+        venditaservice.venditeRandomAsync();
+        return ResponseEntity.accepted().build();
     }
 
 

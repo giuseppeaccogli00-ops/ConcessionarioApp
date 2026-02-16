@@ -15,6 +15,9 @@ public interface ClienteClient {
     @PostMapping("/clientes")
     ClienteResponse create(@RequestBody ClienteRequest request);
 
+    @PostMapping("/clientes/lista")
+    List<ClienteResponse> createAllCliente(@RequestBody List<ClienteRequest> clientiList);
+
     @GetMapping("/clientes")
     List<ClienteResponse> getAll();
 }

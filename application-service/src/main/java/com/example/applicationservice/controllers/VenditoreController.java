@@ -22,6 +22,10 @@ public class VenditoreController {
     }
 
 
+    @PostMapping("/random")
+    public void venditoriRandom() { venditoreService.venditoriRandom();}
+
+
     @GetMapping
     public List<Venditore> getAll() {
         return venditoreService.getAll();

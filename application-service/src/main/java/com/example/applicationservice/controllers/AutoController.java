@@ -21,6 +21,9 @@ public class AutoController {
         return autoService.createAuto(auto);
     }
 
+    @PostMapping("/lista")
+    public List<Auto> createAllAuto(@RequestBody List<Auto> autoList) {return autoService.createAllAuto(autoList);}
+
     @GetMapping
     public List<Auto> getAllAuto(){
         return autoService.getAll();

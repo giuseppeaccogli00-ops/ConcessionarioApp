@@ -20,6 +20,9 @@ public class ClienteController {
         return clienteClient.create(request);
     }
 
+    @PostMapping("/lista")
+    public List<ClienteResponse> createAllClienti(@RequestBody List<ClienteRequest> clientiList) {return clienteClient.createAllCliente(clientiList);}
+
     @GetMapping
     public List<ClienteResponse> getAll() {
         return clienteClient.getAll();

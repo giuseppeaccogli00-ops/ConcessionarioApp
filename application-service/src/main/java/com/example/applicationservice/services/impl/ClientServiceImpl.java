@@ -1,5 +1,6 @@
 package com.example.applicationservice.services.impl;
 
+import com.example.applicationservice.models.entity.Auto;
 import com.example.applicationservice.models.entity.Cliente;
 import com.example.applicationservice.repository.ClientRepository;
 import com.example.applicationservice.services.ClientService;
@@ -28,6 +29,10 @@ public class ClientServiceImpl implements ClientService {
         return cliente;
     }
 
+    @Transactional
+    public List<Cliente> createAllCliente(List<Cliente> clienteList) {
+        return clienteRepository.saveAll(clienteList);
+    }
 
     public List<Cliente> getAll() {
         return clienteRepository.findAll();

@@ -1,5 +1,6 @@
 package com.example.applicationservice.controllers;
 
+import com.example.applicationservice.models.entity.Auto;
 import com.example.applicationservice.models.entity.Cliente;
 import com.example.applicationservice.services.impl.ClientServiceImpl;
 import lombok.RequiredArgsConstructor;
@@ -19,6 +20,9 @@ public class ClienteController {
     public Cliente create(@RequestBody Cliente cliente) {
         return clienteService.createCliente(cliente);
     }
+
+    @PostMapping("/lista")
+    public List<Cliente> createAllClienti(@RequestBody List<Cliente> clientiList) {return clienteService.createAllCliente(clientiList);}
 
 
     @GetMapping

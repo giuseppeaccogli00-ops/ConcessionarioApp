@@ -18,6 +18,9 @@ public interface VenditoreClient {
             @RequestBody VenditoreRequest request
     );
 
+    @PostMapping("venditores/random")
+    void venditoriRandom();
+
     @GetMapping("/venditores")
     List<VenditoreResponse> getAll();
 
