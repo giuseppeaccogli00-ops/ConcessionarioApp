@@ -26,6 +26,7 @@
         <module>bff</module>
         <module>auth-service</module>
         <module>application-service</module>
+        <module>batch-service</module>
     </modules>
 
 
