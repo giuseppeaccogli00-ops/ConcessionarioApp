@@ -2,7 +2,6 @@ package com.example.batch.processor;
 
 import com.example.batch.model.ReportVenditore;
 import com.example.batch.model.VenditaRow;
-import org.slf4j.LoggerFactory;
 import org.springframework.batch.item.ItemProcessor;
 import org.springframework.stereotype.Component;
 

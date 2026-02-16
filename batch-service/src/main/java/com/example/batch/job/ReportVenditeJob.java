@@ -3,7 +3,6 @@ package com.example.batch.job;
 import com.example.batch.model.ReportVenditore;
 import com.example.batch.model.VenditaRow;
 //import com.example.batch.processor.VenditeProcessor;
-import com.example.batch.processor.VenditeProcessor;
 import com.example.batch.reader.VenditeItemReader;
 import com.example.batch.writer.ReportWriter;
 import lombok.RequiredArgsConstructor;
@@ -24,7 +23,7 @@ public class ReportVenditeJob {
     private final PlatformTransactionManager transactionManager;
 
     private final VenditeItemReader reader;
-    private final VenditeProcessor processor;
+//    private final VenditeProcessor processor;
     private final ReportWriter writer;
 
     @Bean
